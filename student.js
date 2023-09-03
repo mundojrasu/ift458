@@ -1,3 +1,5 @@
+var students = [];
+
 var student = {
   name: "Joan Smith",
   birthYear: 2002,
@@ -24,7 +26,13 @@ var student2 = {
   },
 };
 
+students.push(student);
+students.push(student2);
+students.forEach((item) => console.log(item.age()));
+
+console.log(students);
+
 // console.log(student['name']);
 // console.log(student.name);
-console.log(student2.age());
-console.log(student.age());
+// console.log(student2.age());
+// console.log(student.age());
